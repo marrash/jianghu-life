@@ -15,3 +15,7 @@ GitHub Pages 的來源設為 GitHub Actions。每次推送 main，流程會以 N
 Git 不追蹤本機交付資料夾、單檔 HTML 與 ZIP，這些都由原始碼重建。下載版仍可執行 npm run build 及 npm run package 產生。
 
 私人儲存庫須有支援 GitHub Pages 的方案；若帳號不支援，需由擁有者選擇將儲存庫公開或升級方案。設定完成以前，以上網址是預定位置，並不代表已上線。
+
+## 2026-09-22 首次同步狀態
+
+v1.2 原始碼、favicon、四組祕碼、測試及部署流程已推送 main。本機建置與 22 項測試通過。啟用 Pages 時 GitHub 回覆 HTTP 422：目前方案不支援此私人儲存庫的 Pages。尚未公開網站；儲存庫維持私人，待擁有者確認是否公開後繼續。

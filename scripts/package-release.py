@@ -6,6 +6,7 @@ folder=root/'交付版'
 if not (folder/'index.html').is_file():
     raise SystemExit('請先執行 npm run build')
 target=root/'releases'/'江湖一生_完整交付_v1.2.zip'
+target.parent.mkdir(parents=True,exist_ok=True)
 with ZipFile(target,'w',ZIP_DEFLATED) as z:
     for p in sorted(folder.rglob('*')):
         if p.is_file():
