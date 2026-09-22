@@ -1,6 +1,6 @@
 const {test}=require('node:test');
 const assert=require('node:assert/strict');
-const G=require('../core.js');
+const G=require('../core.js').legacy;
 function play(config={},pick=0,action='practice'){
   let s=G.create('測試俠客',config.route||'swift',config.seed||'life',config);
   for(let steps=0;s.phase!=='ending'&&steps<180;steps++){

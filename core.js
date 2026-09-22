@@ -143,6 +143,6 @@
     if(s.phase==='ending'&&(s.year!==15||s.battle.round!==3))fail();return s;
   }
   const api={cheatInfo,unlimited,freeSpecial,create,act,event,choose,nextYear,fight,ending,restore,age,mastery,canAct,canChoose,stance,personalize,routes,actions,stances,moves,labels,vocations,endings,chapters:C.chapters,sects:C.sects,origins:C.origins,duelInfo:C.duels};
-  if(typeof module !== 'undefined') module.exports = api;
-  else root.Jianghu = api;
+  if(typeof module !== 'undefined') module.exports = require('./cultivation.js')(api);
+  else root.Jianghu = root.JianghuCultivation(api);
 })(typeof window !== 'undefined' ? window : this);

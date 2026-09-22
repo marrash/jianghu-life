@@ -1,6 +1,6 @@
 const test=require('node:test');
 const assert=require('node:assert/strict');
-const G=require('../core.js');
+const G=require('../core.js').legacy;
 const make=seed=>G.create('試劍','swift',seed);
 test('四組祕碼精確辨識與初始能力；一般種子不變',()=>{
   for(const [seed,power,money] of [['天生奇才',80,200],['逍遙一生',80,200],['醉顛狂',95,9999],['Marrash',100,99999]]){

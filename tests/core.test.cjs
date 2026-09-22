@@ -1,6 +1,6 @@
 const {test}=require('node:test');
 const assert=require('node:assert/strict');
-const G=require('../core.js');
+const G=require('../core.js').legacy;
 function year(s, action='practice', choice=0){
   for(let i=0;i<3;i++)s=G.act(s,action);
   while(s.phase==='event')s=G.choose(s,choice);
