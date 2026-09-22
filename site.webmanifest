@@ -1,0 +1,16 @@
+{
+  "id": "./",
+  "name": "江湖一生 · 山河故人",
+  "short_name": "江湖一生",
+  "description": "從十五歲拜師，到六十五歲山河回望。選擇你的武俠人生。",
+  "lang": "zh-Hant",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#eaece2",
+  "theme_color": "#263b36",
+  "icons": [
+    {"src": "assets/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any"},
+    {"src": "assets/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any"}
+  ]
+}

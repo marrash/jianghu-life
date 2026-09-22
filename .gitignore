@@ -1,0 +1,10 @@
+node_modules/
+__pycache__/
+*.pyc
+.env
+.env.*
+!.env.example
+/交付版/
+/江湖一生.html
+/releases/
+
