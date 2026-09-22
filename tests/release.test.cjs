@@ -9,7 +9,7 @@ test('獨立 HTML 內嵌分頁圖示與遊戲，不依賴旁邊的程式或圖�
   assert.doesNotMatch(html,/<script\s+src=/);
   assert.doesNotMatch(html,/<link[^>]+href="(?:assets\/|style\.css|favicon\.ico|site\.webmanifest)/);
   assert.doesNotMatch(html,/<img[^>]+src="assets\//);
-  assert.match(html,/完整生涯版 · v3\.0/);
+  assert.match(html,/完整生涯版 · v3\.1/);
 });
 test('交付資料夾含可開啟網頁、圖示與所有 manifest 資產',()=>{
   const folder=path.join(root,'交付版');
