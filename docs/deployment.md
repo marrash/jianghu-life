@@ -2,7 +2,7 @@
 
 儲存庫：https://github.com/marrash/jianghu-life
 
-預定網站：https://marrash.github.io/jianghu-life/
+網站：https://marrash.github.io/jianghu-life/
 
 GitHub Pages 的來源設為 GitHub Actions。每次推送 main，流程會以 Node 22 建置交付版，執行完整測試，再部署通過檢查的網站。網站發布範圍為「交付版」資料夾，含 favicon、分享圖與 manifest；原始碼、測試及開發文件不放進網站成品。
 
@@ -14,8 +14,6 @@ GitHub Pages 的來源設為 GitHub Actions。每次推送 main，流程會以 N
 
 Git 不追蹤本機交付資料夾、單檔 HTML 與 ZIP，這些都由原始碼重建。下載版仍可執行 npm run build 及 npm run package 產生。
 
-私人儲存庫須有支援 GitHub Pages 的方案；若帳號不支援，需由擁有者選擇將儲存庫公開或升級方案。設定完成以前，以上網址是預定位置，並不代表已上線。
+## 2026-09-22 部署設定
 
-## 2026-09-22 首次同步狀態
-
-v1.2 原始碼、favicon、四組祕碼、測試及部署流程已推送 main。本機建置與 22 項測試通過。啟用 Pages 時 GitHub 回覆 HTTP 422：目前方案不支援此私人儲存庫的 Pages。尚未公開網站；儲存庫維持私人，待擁有者確認是否公開後繼續。
+經擁有者確認，儲存庫已改為公開，GitHub Pages 已啟用，來源為 GitHub Actions。README 已精簡並加入正式遊玩網址、致謝與獨立製作聲明。先前私人儲存庫受方案限制而失敗的工作流程保留作為歷史紀錄；以最新 main 提交的部署結果為準。
