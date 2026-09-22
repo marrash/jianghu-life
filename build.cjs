@@ -2,7 +2,7 @@ const fs=require('node:fs');
 const path=require('node:path');
 const read=f=>fs.readFileSync(path.join(__dirname,f),'utf8');
 let html=read('index.html').replace('<link rel="stylesheet" href="style.css">',()=>`<style>${read('style.css')}</style>`);
-for(const file of ['content.js','cultivation.js','core.js','app.js'])html=html.replace(`<script src="${file}"></script>`,()=>`<script>${read(file)}</script>`);
+for(const file of ['content.js','cultivation.js','immortal.js','core.js','app.js'])html=html.replace(`<script src="${file}"></script>`,()=>`<script>${read(file)}</script>`);
 // A public URL is optional; never invent a canonical address for a local game.
 const site=process.env.JIANGHU_SITE_URL;
 if(site){const base=new URL(site);if(!['https:','http:'].includes(base.protocol))throw Error('JIANGHU_SITE_URL 必須為 HTTP(S) 網址');html=html.replaceAll('content="assets/social-card.png"',`content="${new URL('assets/social-card.png',base).href}"`);}

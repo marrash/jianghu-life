@@ -1,5 +1,5 @@
 const test=require('node:test'),assert=require('node:assert/strict');
-const G=require('../core.js');
+const G=require('../core.js').diceLegacy;
 function play(seed='新江湖',mode=1){let s=G.create('試劍','swift',seed);for(let i=0;s.phase!=='ending'&&i<350;i++){
  if(s.phase==='action'){if(!s.training.rolled)s=G.rollTraining(s);else if(s.training.index<s.training.dice.length)s=G.allocate(s,['skill','inner','body','agility','insight'][s.training.index%5]);else s=G.finishTraining(s);}
  else if(s.phase==='event')s=G.choose(s,Math.min(mode,G.event(s).choices.length-1));
